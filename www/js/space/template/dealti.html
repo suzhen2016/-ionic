@@ -1,0 +1,21 @@
+<ion-view hide-back-button="true">
+  <ion-nav-bar class="bar-stable">
+    <ion-nav-buttons side="left">
+      <button class="button button-icon button-clear ion-ios-arrow-back" nav-direction="back" ng-click="vm.goBack()">
+        返回
+        <!-- ng-click="vm.goBack()"-->
+      </button>
+    </ion-nav-buttons>
+  <ion-nav-title>
+    <span>详情页</span>
+  </ion-nav-title>
+
+  <ion-content class="padding">
+    <h1>详情界面</h1>
+    <span ui-sref="ye" nav-transition="ios" nav-direction="forward">去往自己的兄弟页面</span><br/>
+    <span ui-sref="tab.person">去联系人列表</span>
+
+    <h3 ng-click="clickS()">执行函数</h3>
+  </ion-content>
+  <!--<ion-nav-view name='new'></ion-nav-view>-->
+</ion-view>

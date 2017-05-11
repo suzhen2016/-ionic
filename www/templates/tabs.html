@@ -1,0 +1,50 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+
+<ion-side-menus>
+  <!-- 中间内容 -->
+  <ion-side-menu-content drag-content="true">
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-tabs class="tabs-icon-top tabs-color-active-positive">
+      <!-- Dashboard Tab -->
+      <ion-tab title="消息" icon-off="ion-ios-chatbubble-outline" icon-on="ion-ios-chatbubble" href="#/tab/new">
+        <ion-nav-view name="tab-new"></ion-nav-view>
+      </ion-tab>
+      <!-- Chats Tab -->
+      <ion-tab title="联系人" icon-off="ion-ios-person-outline" icon-on="ion-ios-person" href="#/tab/person">
+        <ion-nav-view name="tab-person"></ion-nav-view>
+      </ion-tab>
+      <!-- Account Tab -->
+      <ion-tab title="动态" icon-off="ion-android-star-outline" icon-on="ion-android-star" href="#/taba/space">
+        <ion-nav-view name="tab-space"></ion-nav-view>
+      </ion-tab>
+    </ion-tabs>
+  </ion-side-menu-content>
+
+  <!-- 左侧菜单 -->
+  <ion-side-menu side="left" width="200">
+    <header class="bar bar-header bar-stable">
+      <h1 class="title">左</h1>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+        <ion-item nav-clear menu-close href="#/app/search">
+          Search
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/browse">
+          Browse
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/playlists">
+          Playlists
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,20 @@
+<ion-view view-title="{{chat.name}}" hide-back-button="true">
+  <ion-nav-bar class="bar-stable">
+    <ion-nav-buttons side="left">
+      <button class="button button-icon button-clear ion-ios-arrow-back" ng-click="goBack()">
+      </button>
+    </ion-nav-buttons>
+    <!--<ion-nav-buttons side="secondary">
+      <span ui-sref="invites">邀请</span>
+    </ion-nav-buttons>-->
+  </ion-nav-bar>
+  <ion-content class="padding">
+    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
+    <p>
+      {{chat.lastText}}
+    </p>
+    <div>
+
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,23 @@
+<ion-view view-title="空间">
+  <ion-nav-buttons side="secondary">
+    <span ui-sref = 'more' nav-transition="ios" nav-direction="forward">更多</span>
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+      <ion-toggle  ng-model="settings.enableFriends">
+        开关
+      </ion-toggle>
+    </ion-list>
+    <ul class="list">
+      <li class="item" ui-sref='dealti' nav-transition="ios" nav-direction="forwack">
+        页面跳转2
+      </li>
+      <li class="item" ui-sref='tab.phone' nav-transition="ios">
+       去往电话模块
+      </li>
+      <li class="item" ui-sref='tab.person' nav-transition="ios">
+        去往联系人列表
+      </li>
+    </ul>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,10 @@
+/* Empty. Add your own CSS if you like */
+.bar.bar-stable {
+	background-color:#ffe87c;
+}
+.nav-btns span {
+  font-weight: 600;
+}
+.nav-btns span.active {
+  color:red;
+}
